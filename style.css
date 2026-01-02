@@ -119,8 +119,8 @@ footer {
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 .profile-pic {
-  width: 80px;
-  height: 80px;
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
@@ -138,4 +138,5 @@ footer {
     transform: scale(1);
   }
 }
+
 
