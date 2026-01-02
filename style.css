@@ -262,6 +262,20 @@ footer {
   z-index: 1000;
 }
 
+body.light {
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+body.light section {
+  background: #f8fafc;
+}
+
+body.light .card {
+  background: white;
+  color: #1f2937;
+}
+
 
 
 
