@@ -20,3 +20,9 @@ document.querySelectorAll("section, .card").forEach(el => {
   el.classList.add("hidden");
   observer.observe(el);
 });
+const toggleBtn = document.getElementById("themeToggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+});
+
