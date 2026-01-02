@@ -139,6 +139,117 @@ footer {
   }
 }
 
+/* ===== DARK THEME BASE ===== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b0f19;
+  color: #e5e7eb;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #020617, #0b0f19);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 10%;
+  background-color: #0b0f19;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  color: #f9fafb;
+}
+
+/* CARDS */
+.card {
+  background-color: #111827;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+/* SKILLS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.grid span {
+  background: #020617;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: #c7d2fe;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.grid span:hover {
+  background: #1e293b;
+  transform: scale(1.08);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* PROFILE PHOTO */
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2563eb;
+  margin-bottom: 15px;
+  animation: fadeIn 1.2s ease;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px;
+}
+
+/* FADE IN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 
 
