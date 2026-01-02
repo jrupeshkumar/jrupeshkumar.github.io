@@ -20,9 +20,15 @@ document.querySelectorAll("section, .card").forEach(el => {
   el.classList.add("hidden");
   observer.observe(el);
 });
-const toggleBtn = document.getElementById("themeToggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("themeToggle");
 
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-});
+  if (!toggleBtn) {
+    console.log("Toggle button not found");
+    return;
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+  });
 
