@@ -119,13 +119,16 @@ footer {
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 .profile-pic {
-  width: 50vw;
-  height:50vw;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid green;
-  margin-bottom: 10px;
-  animation: fadeIn 0.8s ease;
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+
 }
 
 @keyframes fadeIn {
@@ -138,6 +141,7 @@ footer {
     transform: scale(1);
   }
 }
+
 
 
 
