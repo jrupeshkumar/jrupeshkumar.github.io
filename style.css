@@ -249,6 +249,19 @@ footer {
     transform: scale(1);
   }
 }
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 
 
 
