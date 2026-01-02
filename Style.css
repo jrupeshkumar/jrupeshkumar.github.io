@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+.hero {
+    background: #0f172a;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid white;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.grid span {
+    background: #e5e7eb;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* ---------- ANIMATIONS ---------- */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover animations */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Button hover */
+.btn {
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #1d4ed8;
+}
+
+/* Skill hover */
+.grid span {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.grid span:hover {
+    transform: scale(1.08);
+    background: #c7d2fe;
+}
