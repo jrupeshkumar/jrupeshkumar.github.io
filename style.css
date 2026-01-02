@@ -1,188 +1,72 @@
+/* ===== RESET ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #f8fafc;
-    color: #1f2937;
-}
-
-.hero {
-    background: #0f172a;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 36px;
-}
-
-.subtitle {
-    margin-top: 10px;
-    color: #cbd5e1;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    margin: 5px;
-}
-
-.btn.outline {
-    background: transparent;
-    border: 2px solid white;
-}
-
-section {
-    padding: 50px 10%;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-}
-
-.grid span {
-    background: #e5e7eb;
-    padding: 10px;
-    text-align: center;
-    border-radius: 6px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-/* ---------- ANIMATIONS ---------- */
-
-.hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.7s ease;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Hover animations */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-.profile-pic {
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid red;
-  margin-bottom: 10px;
-  animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* ===== DARK THEME BASE ===== */
-
-body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+}
+
+/* ===== DARK THEME (DEFAULT) ===== */
+body {
   background-color: #0b0f19;
   color: #e5e7eb;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
   background: linear-gradient(135deg, #020617, #0b0f19);
-  color: #ffffff;
+  color: white;
   padding: 80px 20px;
   text-align: center;
 }
 
-/* SECTIONS */
+.hero h1 {
+  font-size: 36px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* ===== BUTTONS ===== */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 5px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* ===== SECTIONS ===== */
 section {
   padding: 50px 10%;
   background-color: #0b0f19;
 }
 
-/* HEADINGS */
-h1, h2, h3 {
+h2 {
+  margin-bottom: 20px;
   color: #f9fafb;
 }
 
-/* CARDS */
-.card {
-  background-color: #111827;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
-}
-
-/* SKILLS */
+/* ===== SKILLS GRID ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -203,23 +87,22 @@ h1, h2, h3 {
   transform: scale(1.08);
 }
 
-/* BUTTONS */
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  background: #2563eb;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
+/* ===== CARDS ===== */
+.card {
+  background-color: #111827;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.btn:hover {
-  background: #1d4ed8;
-  transform: scale(1.05);
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
 }
 
-/* PROFILE PHOTO */
+/* ===== PROFILE IMAGE ===== */
 .profile-pic {
   width: 80px;
   height: 80px;
@@ -230,7 +113,7 @@ h1, h2, h3 {
   animation: fadeIn 1.2s ease;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
   background: #020617;
   color: #9ca3af;
@@ -238,7 +121,19 @@ footer {
   padding: 20px;
 }
 
-/* FADE IN */
+/* ===== SCROLL ANIMATION ===== */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== FADE IN ===== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -249,6 +144,8 @@ footer {
     transform: scale(1);
   }
 }
+
+/* ===== THEME TOGGLE BUTTON ===== */
 .theme-toggle {
   position: fixed;
   top: 15px;
@@ -262,6 +159,7 @@ footer {
   z-index: 1000;
 }
 
+/* ===== LIGHT MODE ===== */
 body.light {
   background: #f8fafc;
   color: #1f2937;
@@ -276,10 +174,7 @@ body.light .card {
   color: #1f2937;
 }
 
-
-
-
-
-
-
-
+body.light .grid span {
+  background: #e5e7eb;
+  color: #1f2937;
+}
